@@ -1,0 +1,46 @@
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100vw;
+  height: 100px;
+  background-color: rgb(74, 74, 73);
+}
+.logo {
+  display: flex;
+  font-family: 'Charmonman', cursive;
+  margin-left: 30px;
+}
+#first {
+  font-weight:100;
+  color: white;
+}
+#second {
+  color:#E58A20;
+  font-weight: 700;
+}
+.redirect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.redirect-menu {
+  list-style: none;
+  display: flex;
+}
+.sub-page {
+  display: flex;
+  margin-right: 75px;
+  a {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    &:hover {
+      color: #E58A20;
+    }
+  }
+}

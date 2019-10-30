@@ -3,8 +3,13 @@
 //
 // Sass:
 // https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+@import "colors";
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+@import "../fonts/scss/fontawesome.scss";
+@import "../fonts/scss/solid.scss";
+@import '1.1-Naglowek', '1.2-Karuzela', '1.3-Call-to-Action', '1.4-O-aplikacji';
+@import '1.7-Stopka', '1.6-O-autorze','1.5-Formularz-do-zapisu';
+@import "2.1-widok-aplikacji";
+@import "2.2-welcome-message";
 
 
-body{
-  background-color: #BADA55;
-}

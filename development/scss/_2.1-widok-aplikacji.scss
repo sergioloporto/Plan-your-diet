@@ -1,0 +1,86 @@
+.app-body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    font-family: 'Open Sans', sans-serif;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 230px 1fr;
+    grid-template-areas: "header header"
+                         "menu content";
+}
+.app-header {
+    grid-area: header;
+    background: $blueTextHeaderColumns;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.app-header__imie {
+    font-size: 24px;
+    color: $whiteBackground;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    i {
+        color: $orange;
+        font-size: 50px;
+        margin-left: 25px;
+    }
+}
+.app-navbar {
+        grid-area: menu;
+        background: $bluenavigation;
+}
+.app-row {
+    display: flex;
+}
+.app-col {
+    flex: 1;
+    margin: 10px;
+}
+.app-header-h1 {
+    margin-left: 30px;
+    font-family: Charmonman,sans-serif;
+    white-space: nowrap;
+}
+#first {
+    font-weight:100;
+    color: white;
+}
+#second {
+    color:#E58A20;
+    font-weight: 700;
+}
+.app-main {
+    background-image: url("../img/background.png");
+}
+.app-navbar__menu {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    color: $whiteBackground;
+    li {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        position: relative;
+        cursor: pointer;
+        &:hover {
+            border-left: 5px solid $orange;
+            padding-left: 25px;
+            font-weight: 700;
+            &::after {
+                content: "\f054";
+                font-family: "Font Awesome 5 Free";
+                display: block;
+                position: absolute;
+                color: $orange;
+                right: 10px;
+            }
+        }
+    }
+}
+
+
+
