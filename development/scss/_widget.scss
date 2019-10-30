@@ -1,0 +1,38 @@
+.widget{
+  display: none;
+}
+
+.widget-container{
+  min-width: 1024px;
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.add{
+  display: flex;
+}
+
+.adding-recipe,
+.adding-plan {
+  width: 250px;
+  height: 250px;
+  border: 1px dashed darkgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+
+  .plus{
+    font-size: 100px;
+    color: darkgreen;
+    padding: 30px;
+    margin-right: 0px;
+  }
+  p{
+    color: darkgreen;
+    font-size: 28px;
+  }
+}
