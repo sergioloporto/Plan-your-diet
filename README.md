@@ -16,7 +16,7 @@ Link to the app: https://sergioloporto.github.io/Plan-your-diet/development/
 
 # Current Project Team Members and Authors
  * [sergioloporto](https://github.com/sergioloporto) - **Sergio Lo Porto**
- * [kappa3-3](https://github.com/kappa3-3) - **Kasia Janiszewska**
+ * [kappa3-3](https://github.com/kappa3-3) - **Katarzyna Janiszewska**
  
  
 ## Project information
