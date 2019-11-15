@@ -50,6 +50,9 @@ Avaliable commends for you to type in console:
 ## 🤝 Contributing
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/sergioloporto/Plan-your-diet/issues).
 
+### Contributors
+ * [CodersLab](https://github.com/sergioloporto) - **Coders Lab**
+ * [annowu](https://github.com/annowu) - **Anna Wiśniewska**
 
 ## Show your support
 Give a ⭐️ if this project helped you!
