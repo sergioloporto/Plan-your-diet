@@ -10,7 +10,7 @@
 
 
 # Plan your diet app
-Link to the app: https://sergioloporto.github.io/Plan-your-diet/development/
+Link to the app: https://sergioloporto.github.io/Plan-your-diet/development/<br>
 **Important**: the app is still being developed. Some features are not yet ready.
 
 
@@ -45,6 +45,12 @@ Avaliable commends for you to type in console:
 `gulp watch` - runs gulp in watch mode, that will compiles your `main.scss` into `css/main.css`
 
 `gulp sass` - compiles sass into CSS & auto-inject into browsers
+
+
+## Features to be added
+* RWD
+* Add a plan
+* List plans
 
 
 ## 🤝 Contributing
