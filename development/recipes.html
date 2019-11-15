@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Przepisy</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=latin-ext"
+          rel="stylesheet">
+    <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"-->
+    <!--          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">-->
+</head>
+<body class="app-body">
+<header class="app-header">
+    <a href="index.html">
+        <h1 class="app-header-h1">
+            <span id="first">Zaplanuj</span>
+            <span id="second">Jedzonko</span>
+        </h1>
+    </a>
+    <div class="app-header__imie"><span id="nameInHeader">Imię</span><i class="fas fa-user-circle"></i></div>
+</header>
+<nav class="app-navbar">
+    <ul class="app-navbar__menu">
+        <li class="app-navbar__menu-item"><a href="app.html">Pulpit</a></li>
+        <li class="app-navbar__menu-item" id="navbar-current-page"><a href="recipes.html">Przepisy</a></li>
+    </ul>
+</nav>
+<main class="app-main">
+    <section class="app-welcome-dashboard app-welcome-dashboard_whitebg">
+        <div class="recipe-list">
+            <header class="recipe-list-header">
+                <h2>Lista przepisów</h2>
+                <a href="app.html"><i class="fas fa-plus-square"></i></a>
+            </header>
+            <table class="recipe-list-intro">
+                <tr class="recipe-list-title">
+                    <th class="recipe-list-counter">id</th>
+                    <th class="recipe-list-name">nazwa</th>
+                    <th class="recipe-list-description">opis</th>
+                    <th class="recipe-list-icons">akcje</th>
+                </tr>
+            </table>
+            <table class="recipe-list-container">
+                <tr id="recipe-list-value">
+                    <td id="recipe-list-counter" class="recipe-list-counter"></td>
+                    <td id="recipe-list-name" class="recipe-list-name"></td>
+                    <td id="recipe-list-description" class="recipe-list-description"></td>
+                    <td id="recipe-list-icons" class="recipe-list-icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+    <!--        test code available for further app development-->
+    <!--        <div class="app-row">-->
+    <!--            <div class="app-col">-->
+    <!--            </div>-->
+    <!--            <div class="app-col">-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="app-row">-->
+    <!--            <div class="app-col">-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+</main>
+
+<script src="./js/logincheck.js"></script>
+<script src="./js/recipes_list.js"></script>
+
+</body>
+</html>

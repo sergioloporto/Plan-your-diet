@@ -1,11 +1,11 @@
 .app-welcome-dashboard {
     margin: 50px auto;
-    height: calc(100% - 130px);
+    //height: calc(100% - 130px);
     width: 90%;
-    border: 1px dashed $tableTextColorIcons;
 }
 .app-welcome-dashboard_whitebg {
     background: $whiteBackground;
+    border: 1px dashed $tableTextColorIcons;
 }
 .app-welcome {
     display: flex;

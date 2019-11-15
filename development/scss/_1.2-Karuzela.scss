@@ -18,6 +18,9 @@
   border: none;
   font-size: 35px;
   color: #4a4a49;
+  &:focus {
+    outline: 0;
+  }
 }
 
 #nextPicture {
@@ -28,6 +31,9 @@
   border: none;
   font-size: 35px;
   color: #4a4a49;
+  &:focus {
+    outline: 0;
+  }
 }
 .slider {
   list-style: none;
@@ -39,10 +45,13 @@
 .slider-item {
   display: none;
   position: relative;
+  .textGrey {
+    color: $blueTextHeaderColumns;
+  }
   img {
     display: block;
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin: 0;
     padding: 0;
     object-fit: cover;
@@ -51,15 +60,15 @@
   h1 {
     top: 20%;
     left: 50%;
-    color: white;
+    color: $whiteBackground;
     font-size: 60px;
     position: absolute;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);z
   }
   p {
     top: 40%;
     left: 50%;
-    color: white;
+    color: $whiteBackground;
     font-size: 30px;
     position: absolute;
     width: 50%;

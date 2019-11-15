@@ -1,0 +1,16 @@
+.app-dashboard-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $greenSuccessColor;
+    font-size:18px;
+    font-weight: bold;
+    i {
+        font-size: 100px;
+        padding-bottom: 10px;
+    }
+    p {
+        font-size: 24px;
+    }
+}

@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Charmonman|Open+Sans:400,400i,700,700i&display=swap"
           rel="stylesheet">
 </head>
+
 <body class="landing-page">
-<header class="banner">
+  <header class="banner">
     <h1 class="logo">
         <span id="first">Zaplanuj&nbsp;</span>
         <span id="second">Jedzonko</span>
@@ -18,7 +19,7 @@
     <div class="redirect">
         <ul class="redirect-menu">
             <li class="sub-page">
-                <a href="1">Zaplanuj posiłki</a>
+                <a href="./app.html">Zaplanuj posiłki</a>
             </li>
             <li class="sub-page">
                 <a href="2">Dlaczego warto</a>
@@ -32,13 +33,14 @@
         </ul>
     </div>
 </header>
+  
 <section>
     <div>
         <ul class="slider">
             <li class="slider-item">
                 <img src="img/beans.jpg">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor dolores quia tempora! Illo,
+                <h1 class="textGrey">Lorem Ipsum</h1>
+                <p class="textGrey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor dolores quia tempora! Illo,
                     vel.</p>
             </li>
             <li class="slider-item">
@@ -74,23 +76,88 @@
         </button>
     </div>
 </section>
-<section>
-    <!-- CTA + button -->
+
+<section class="callToAction">
+    <div class="callToActionText">
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <p>consectetur adipisicing elit. Ab doloribus, odit. A aperiam ea fuga maxime quibusdam repellendus veritatis?</p>
+    </div>
+    <button id="ToAppBtn">Lorem ipsum</button>
+</section>
+
+<section class="aboutAppContainer">
+    <div class="aboutApp">
+        <i class="fas fa-check aboutAppArg"></i>
+        <h3 class="aboutAppArg">Lorem ipsum dolor sit amet.</h3>
+        <p class="aboutAppArg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum labore, magni non provident quia soluta tempora vero. Corporis delectus enim itaque nemo repellat?</p>
+    </div>
+    <div class="aboutApp">
+        <i class="far fa-clock aboutAppArg"></i>
+        <h3 class="aboutAppArg">Lorem ipsum dolor sit amet.</h3>
+        <p class="aboutAppArg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum labore, magni non provident quia soluta tempora vero. Corporis delectus enim itaque nemo repellat?</p>
+    </div>
+    <div class="aboutApp">
+        <i class="fas fa-list aboutAppArg"></i>
+        <h3 class="aboutAppArg">Lorem ipsum dolor sit amet.</h3>
+        <p class="aboutAppArg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum labore, magni non provident quia soluta tempora vero. Corporis delectus enim itaque nemo repellat?</p>
+    </div>
+</section>
+
+<section class="subscription">
+    <h3>Lorem ipsum dolor sit amet</h3>
+    <form action="/action_page.php" class="subscription-form">
+        <input type="text" name="mail" required>
+        <button type="submit" class="email-btn">Lorem</button>
+    </form>
 </section>
 <section>
-    <!-- features -->
+    <div class="author">
+        <img src="./img/author.jpg" alt="Profile picture" class="author-profile-pic">
+        <div class="about-author">
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vivamus lacinia nunc dolor, ut consequat tortor consectetur a.
+                Vivamus erat quam, sodales quis sapien et, pulvinar vehicula metus.
+                Praesent dapibus risus tempus urna dignissim, eu eleifend erat pretium.</p>
+        </div>
+    </div>
 </section>
-<section>
-    <!-- newsletter -->
+  
+<section class='more-info'>
+    <div class='more-info-col1'>
+        <h3>Lorem ipsum dolor</h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class='more-info-col2'>
+        <h3>Lorem ipsum dolor</h3>
+        <ul>
+            <li>Consectetur adipiscing elit,</li>
+            <li>Sed do eiusmod tempor incididunt.</li>
+            <li>Vivamus lacinia nunc dolor.</li>
+            <li>Praesent dapibus risus tempus.</li>
+        </ul>
+    </div>
+  
+    <div class='more-info-col3'>
+        <h3>Lorem ipsum dolor</h3>
+        <form action="/action_page.php">
+            <input type="text" name="newsletter">
+            <button type="submit" class="email-btn">Lorem</button>
+        </form>
+        <div class="more-info-col3-social">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
 </section>
-<section>
-    <!-- aobut me -->
-</section>
-<section>
-    <!-- three columns -->
-</section>
+  
 <footer>
-    <!-- copyright -->
+    <div class="copyrights">
+        <p> Copyright&nbsp; <b>ZaplanujJedzonko.pl</b></p>
+    </div>
 </footer>
 
 <script src="./js/index.js"></script>

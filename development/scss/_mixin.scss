@@ -1,0 +1,21 @@
+
+@mixin submitOrangeBtn {
+  background-color: $orange;
+  color: $whiteBackground;
+  box-sizing: border-box;
+  border: none;
+  width: 100px;
+  font-weight: bold;
+  font-size: 18px;
+  focus: {
+    outline: 0;
+  }
+}
+
+@mixin apph2 {
+  margin: 0;
+  padding:0;
+  color: $orange;
+  font-weight: 700;
+  font-size: 24px;
+}

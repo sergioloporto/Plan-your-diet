@@ -1,0 +1,38 @@
+.plan-adding {
+    background: $whiteBackground;
+    border: 1px dashed;
+    padding: 25px 50px;
+}
+    .schedules-content{
+    border-color: $tableTextColorIcons;
+    background: $whiteBackground;
+    border: 1px dashed;
+    padding: 25px 50px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.schedules-content .schedules-text {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding: 20px 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-bottom-color: $tableTextColorIcons;
+    color: $tableTextColorIcons;
+
+}
+.button {
+    background: $orange;
+    grid-area: but;
+    width: 148px;
+    height: 33px;
+    border: none;
+    color: $whiteBackground;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}

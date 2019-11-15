@@ -1,0 +1,153 @@
+.app-dashboard-logged-in__add-recipe {
+    border-color: $tableTextColorIcons;
+    background: $whiteBackground;
+    border: 1px dashed;
+    padding: 25px 50px;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 22px;
+    //width: 100%;
+    //height: 100%;
+    //grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    //grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(10, 40px);;
+    grid-template-areas: "hea hea hea hea hea hea hea hea hea hea hea hea hea hea"
+                         "nam nam nam nam nam nam nam nam nam nam nam nam nam nam"
+                         "des des des des des des des des des des des des des des"
+                         "des des des des des des des des des des des des des des"
+                         "ins ins ins ins ins ins ins ing ing ing ing ing ing ing"
+                         "ins ins ins ins ins ins ins ing ing ing ing ing ing ing"
+                         "isl isl isl isl isl isl isl igl igl igl igl igl igl igl"
+                         "isl isl isl isl isl isl isl igl igl igl igl igl igl igl"
+                         "isl isl isl isl isl isl isl igl igl igl igl igl igl igl"
+                         "isl isl isl isl isl isl isl igl igl igl igl igl igl igl"
+                         "isl isl isl isl isl isl isl igl igl igl igl igl igl igl";
+
+    opacity: 0;
+    label {
+        display: none;
+    }
+}
+.fade-in {
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+.add-recipe__header {
+    grid-area: hea;
+    //background: transparentize(pink, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-transform: uppercase;
+    border-bottom: 2px solid lighten($tableTextColorIcons, 20);
+    h2 {
+        @include apph2;
+    }
+}
+button {
+    background: $orange;
+    grid-area: but;
+    width: 148px;
+    height: 33px;
+    border: none;
+    color: $whiteBackground;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.instruction-add-functionality {
+    display: flex;
+
+    .instructions {
+        flex-grow: 1;
+    }
+    i {
+        margin-left: 5px;
+        font-size: 30px;
+        color: $greenSuccessColor;
+    }
+}
+.ingredient-add-functionality {
+    display: flex;
+    .ingredients {
+        flex-grow: 1;
+    }
+    i {
+        margin-left: 5px;
+        font-size: 30px;
+        color: $greenSuccessColor;
+    }
+}
+.add-recipe__recipe-name {
+    grid-area: nam;
+    display: flex;
+    justify-content: space-between;
+    p {
+        width: 15%;
+        font-size: 24px;
+        color: $tableTextColorIcons;
+        align-self: center;
+    }
+    input {
+        width: 80%;
+    }
+}
+.add-recipe__recipe-description {
+    grid-area: des;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        width: 15%;
+        font-size: 24px;
+        color: $tableTextColorIcons;
+        align-self: center;
+
+    }
+    textarea {
+        width: 80%;
+    }
+}
+.add-recipe__instructions, .add-recipe__ingredients {
+    text-transform: uppercase;
+    color:$tableTextColorIcons;
+    h3 {
+        border-bottom: 2px solid lighten($tableTextColorIcons, 20);
+    }
+}
+.add-recipe__instructions {
+    grid-area: ins;
+    display: flex;
+    flex-direction: column;
+}
+.add-recipe__ingredients {
+    grid-area: ing;
+    display: flex;
+    flex-direction: column;
+}
+.add-recipe__instructions-list, .add-recipe__ingredients-list {
+    margin-top: 30px;
+    overflow-y: scroll;
+    height: 60%;
+    li {
+        padding-left: 5px;
+        padding-bottom: 2px;
+        .orange {
+            color: $orangeWarningMessages;
+            padding-left: 5px;
+            cursor: pointer;
+        }
+        .red {
+            color: $trashIconColor;
+            padding-left: 5px;
+            cursor: pointer;
+        }
+    }
+}
+.add-recipe__instructions-list {
+    grid-area: isl;
+}
+.add-recipe__ingredients-list {
+    grid-area: igl;
+}

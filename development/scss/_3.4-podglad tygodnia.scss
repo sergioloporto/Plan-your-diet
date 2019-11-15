@@ -1,0 +1,77 @@
+.app-weekly-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 0 50px;
+    p {
+        font-size: 20px;
+        color: $orange;
+        font-weight: 700;
+    }
+}
+.weekly-plan {
+    width: 100%;
+    margin-top: 30px;
+}
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;;
+}
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding: 20px 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-bottom-color: $tableTextColorIcons;
+    color: $tableTextColorIcons;
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-bottom-color: $tableTextColorIcons;
+    color: $blueTextHeaderColumns;
+}
+
+.tg .tg-fymr {
+    font-weight: bold;
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top
+}
+
+.tg .tg-0pky {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top
+}
+
+@media screen and (max-width: 767px) {
+    .tg {
+        width: auto !important;
+    }
+    .tg col {
+        width: auto !important;
+    }
+    .tg-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+.plan-tygodnia-next-prev {
+    display: flex;
+    justify-content: space-between;
+    color: $orange;
+    width: 100%;
+    margin-top: 30px;
+}

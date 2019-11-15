@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="./css/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=latin-ext"
           rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"-->
+<!--          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">-->
 </head>
 <body class="app-body">
 <header class="app-header">
-    <h1 class="app-header-h1">
+    <a href="index.html">
+        <h1 class="app-header-h1">
         <span id="first">Zaplanuj</span>
         <span id="second">Jedzonko</span>
     </h1>
+    </a>
     <div class="app-header__imie"><span id="nameInHeader">Imię</span><i class="fas fa-user-circle"></i></div>
 </header>
 <nav class="app-navbar">
     <ul class="app-navbar__menu">
-        <li class="app-navbar__menu-item">Pulpit</li>
-        <li class="app-navbar__menu-item">Przepisy</li>
-        <li class="app-navbar__menu-item">Plany</li>
+        <li class="app-navbar__menu-item"><a href="app.html">Pulpit</a></li>
+        <li class="app-navbar__menu-item"><a href="recipes.html">Przepisy</a></li>
     </ul>
 </nav>
 <main class="app-main">
@@ -42,14 +43,141 @@
                     aplikację :)</p>
             </div>
         </div>
-        <div class="app-dashboard-widget app-dashboard-widget-add-recipe"></div>
-        <div class="app-dashboard-widget app-dashboard-widget-add-plan"></div>
-        <div class="app-dashboard-info-boxes">
-            <div class="app-dashboard-info-boxes__box app-dashboard-info-boxes__box-quantity"></div>
-            <div class="app-dashboard-info-boxes__box app-dashboard-info-boxes__box-reminder"></div>
-            <div class="app-dashboard-info-boxes__box app-dashboard-info-boxes__box-great"></div>
+        <div class="app-dashboard-logged-in">
+            <div class="app-dashboard-widget app-dashboard-widget-add-recipe">
+
+                <i class="far fa-plus-square"></i>
+                <p>Dodaj przepis</p>
+            </div>
+            <div class="app-dashboard-widget app-dashboard-widget-add-plan">
+                <i class="far fa-plus-square"></i>
+                <p>Dodaj plan</p>
+            </div>
+
+            <div class="app-dashboard-info-box app-dashboard-info-boxes__box-quantity"><i
+                    class="fas fa-info-circle"></i>
+                <p>Masz już 99 przepisów, nieźle!</p><i class="fas fa-window-close"></i></div>
+            <div class="app-dashboard-info-box app-dashboard-info-boxes__box-reminder"><i
+                    class="fas fa-exclamation-circle"></i><p>Pamiętaj, aby dodać plan!</p><i class="fas fa-window-close"></i>
+            </div>
+            <div class="app-dashboard-info-box app-dashboard-info-boxes__box-great"><i class="fas fa-check-circle"></i>
+                    <p>Świetnie że jesteś! Udanego planowania i smaczego! :)</p><i class="fas fa-window-close"></i></div>
+            <div class="app-weekly-plan">
+                <p>Twój plan na {nr_tygodnia} tydzień: </p>
+                <table class="tg weekly-plan">
+                    <tr>
+                        <th class="tg-fymr">Poniedziałek</th>
+                        <th class="tg-fymr">Wtorek</th>
+                        <th class="tg-fymr">Środa</th>
+                        <th class="tg-fymr">Czwartek</th>
+                        <th class="tg-fymr">Piątek</th>
+                        <th class="tg-fymr">Sobota</th>
+                        <th class="tg-fymr">Niedziela</th>
+                    </tr>
+                    <tr>
+                        <td class="tg-0pky">sniadanie</td>
+                        <td class="tg-0pky">sniadanie</td>
+                        <td class="tg-0pky">sniadanie</td>
+                        <td class="tg-0pky">sniadanie</td>
+                        <td class="tg-0pky">sniadanie</td>
+                        <td class="tg-0pky">sniadanie</td>
+                        <td class="tg-0pky">sniadanie</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0pky">drugie sniadanie</td>
+                        <td class="tg-0pky">drugie sniadanie</td>
+                        <td class="tg-0pky">drugie sniadanie</td>
+                        <td class="tg-0pky">drugie sniadanie</td>
+                        <td class="tg-0pky">drugie sniadanie</td>
+                        <td class="tg-0pky">drugie sniadanie</td>
+                        <td class="tg-0pky">drugie sniadanie</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0pky">zupa</td>
+                        <td class="tg-0pky">zupa</td>
+                        <td class="tg-0pky">zupa</td>
+                        <td class="tg-0pky">zupa</td>
+                        <td class="tg-0pky">zupa</td>
+                        <td class="tg-0pky">zupa</td>
+                        <td class="tg-0pky">zupa</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0pky">drugie danie</td>
+                        <td class="tg-0pky">drugie danie</td>
+                        <td class="tg-0pky">drugie danie</td>
+                        <td class="tg-0pky">drugie danie</td>
+                        <td class="tg-0pky">drugie danie</td>
+                        <td class="tg-0pky">drugie danie</td>
+                        <td class="tg-0pky">drugie danie</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0pky">kolacja</td>
+                        <td class="tg-0pky">kolacja</td>
+                        <td class="tg-0pky">kolacja</td>
+                        <td class="tg-0pky">kolacja</td>
+                        <td class="tg-0pky">kolacja</td>
+                        <td class="tg-0pky">kolacja</td>
+                        <td class="tg-0pky">kolacja</td>
+                    </tr>
+                </table>
+                <div class="plan-tygodnia-next-prev">
+                    <div class="prevuius-plan"><i class="fas fa-angle-double-left"></i>poprzedni</div>
+                    <div class="next-plan">następny<i class="fas fa-angle-double-right"></i></div>
+                </div>
+            </div>
+
+
+
+
         </div>
-        <div class="app-weekly-plan"></div>
+
+        <div class="app-dashboard-logged-in__add-recipe">
+            <div class="add-recipe__header">
+                <h2>Nowy przepis</h2>
+                <button id="saveClose">Zapisz i zamknij</button>
+            </div>
+            <div class="add-recipe__recipe-name">
+                <p>Nazwa przepisu</p>
+                <label for="recipe-name">Name (4 to 8 characters):</label>
+                <input type="text" id="recipe-name" name="recipe-name" required
+                       placeholder="Zapiekanka z ziemniakami i brukselką">
+            </div>
+            <div class="add-recipe__recipe-description">
+                <p>Opis przepisu</p>
+                <label for="recipe-description">Name (4 to 8 characters):</label>
+                <textarea id="recipe-description" name="description-name" rows="4" cols="50" required
+                          placeholder="Mamusina najlepsza zapiekanka pod słońcem. Można ją podać jako główne danie albo jako kolację. W zapiekance możesz użyć również kiełbasy paprykowej sprawi ona, że zapiekanka będzie ostrzejsza w smaku. Zgodnie z zalecanimi Makłowicza, podawać z dobrze dobranym winkiem ;)
+
+"></textarea>
+            </div>
+            <div class="add-recipe__instructions">
+                <h3>Instrukcje</h3>
+                <div class="instruction-add-functionality">
+                    <textarea name="instructions" id="add-recipe-instructions" rows="4" class="instructions"
+                              placeholder="Po tym czasie ziemniaki zalej śmietaną wymieszaną z Knorr Naturalnie smaczne, dodaj liście brukselki i dokładnie wymieszaj."></textarea>
+                    <i class="fas fa-plus-square" id="btnAddInstructions"></i>
+                </div>
+            </div>
+            <div class="add-recipe__ingredients">
+                    <h3>Składniki</h3>
+                <div class="ingredient-add-functionality">
+                    <textarea name="ingredients" id="add-recipe-ingredients" rows="4" class="ingredients"
+                              placeholder="tarty parmezan lub inny ser"></textarea>
+                    <i class="fas fa-plus-square" id="btnAddIngredients"></i>
+                </div>
+            </div>
+            <div class="add-recipe__instructions-list">
+                <ol id="add-recipe__instructions-list-ollist">
+                </ol>
+            </div>
+           <div class="add-recipe__ingredients-list">
+               <ul id="add-recipe__ingredients-list-ullist">
+               </ul>
+            </div>
+
+
+        </div>
+
     </section>
     <!--        test code available for further app development-->
     <!--        <div class="app-row">-->
@@ -65,5 +193,7 @@
 
 </main>
 <script src="./js/app.js"></script>
+<script src="./js/add-recipe.js"></script>
+<!--<script src="./js/recipes_list.js"></script>-->
 </body>
 </html>

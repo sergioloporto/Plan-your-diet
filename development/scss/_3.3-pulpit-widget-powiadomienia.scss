@@ -1,0 +1,71 @@
+.app-dashboard-logged-in {
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+    height: 100%;
+    //grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(10, 60px);
+    grid-template-areas: "dpr dpr dpr dpl dpl dpl qu qu qu qu qu qu qu qu qu"
+                         "dpr dpr dpr dpl dpl dpl re re re re re re re re re"
+                         "dpr dpr dpr dpl dpl dpl gr gr gr gr gr gr gr gr gr"
+                         "pla pla pla pla pla pla pla pla pla pla pla pla pla pla pla"
+                         "pla pla pla pla pla pla pla pla pla pla pla pla pla pla pla"
+                         "pla pla pla pla pla pla pla pla pla pla pla pla pla pla pla"
+                         "pla pla pla pla pla pla pla pla pla pla pla pla pla pla pla"
+                         "pla pla pla pla pla pla pla pla pla pla pla pla pla pla pla"
+                         "pla pla pla pla pla pla pla pla pla pla pla pla pla pla pla"
+                         "pla pla pla pla pla pla pla pla pla pla pla pla pla pla pla";
+                         //"pla pla pla pla pla pla pla pla pla pla pla pla pla pla pla"
+                         //"pla pla pla pla pla pla pla pla pla pla pla pla pla pla pla";
+    &>* {
+        border: 1px dashed;
+        background: $whiteBackground;
+    }
+}
+.app-dashboard-widget-add-recipe {
+    grid-area: dpr;
+    border-color: $greenSuccessColor;
+    cursor: pointer;
+}
+.app-dashboard-widget-add-plan {
+    grid-area: dpl;
+    border-color: $greenSuccessColor;
+    cursor: pointer;
+}
+.app-dashboard-info-boxes__box-quantity, .app-dashboard-info-boxes__box-reminder, .app-dashboard-info-boxes__box-great {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    i {
+        font-size: 30px;
+        &.fa-window-close {
+            font-size: 15px;
+            align-self: baseline;
+            padding-top: 3px;
+        }
+    }
+}
+.app-dashboard-info-boxes__box-quantity {
+    grid-area: qu;
+    border-color: $blueInfoMessages;
+    color: $blueInfoMessages;
+}
+.app-dashboard-info-boxes__box-reminder {
+    grid-area: re;
+    border-color: $orangeWarningMessages;
+    color: $orangeWarningMessages;
+}
+.app-dashboard-info-boxes__box-great {
+    grid-area: gr;
+    border-color: $greenSuccessColor;
+    color: $greenSuccessColor;
+}
+.app-weekly-plan {
+    grid-area: pla;
+    border-color: $tableTextColorIcons;
+}

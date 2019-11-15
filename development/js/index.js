@@ -1,3 +1,4 @@
+//1.2 carousel
 const nextBtn = document.getElementById('nextPicture');
 const prevBtn = document.getElementById('prevPicture');
 const liArray = document.querySelectorAll('.slider-item');
@@ -29,3 +30,8 @@ prevBtn.addEventListener('click', function () {
     }
     liArray[currentIndex].style.display = 'block';
 });
+//1.3 Redirect button
+document.getElementById("ToAppBtn").onclick = function () {
+
+    location.href = "../app.html";
+};

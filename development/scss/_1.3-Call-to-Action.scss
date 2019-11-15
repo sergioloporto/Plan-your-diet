@@ -1,0 +1,48 @@
+#ToAppBtn {
+  display: flex;
+  justify-content: center;
+  color: $whiteBackground;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  background-color: $orange;
+  width: 220px;
+  height: 55px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  &:active {
+    width: 218px;
+    height: 53px;
+    border: none;
+  }
+  &:focus {
+    outline:0;
+  }
+}
+.callToAction {
+  height: 220px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: $blueTextHeaderColumns;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.callToActionText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: $whiteBackground;
+  font-family: 'Open Sans', sans-serif;
+  h3 {
+    font-size: 35px;
+    margin: 0;
+  }
+  p {
+    font-size: 18px;
+    width: 70%;
+  }
+}
